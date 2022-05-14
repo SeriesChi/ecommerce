@@ -1,0 +1,15 @@
+// sidebars width and element widths
+// in scss the variable cannot be manipulated while the app is running so we use css variable
+// px is always constant i.e not scalable and rem is scalable (responsive to the screen)
+:root {
+    --header-height: 40px;
+}
+
+$primary: #D19C97;
+$secondary: #EDF1FF;
+$dark: #1C1C1C;
+
+$body-bg: $primary;
+
+//font variable
+$typeface1: "Poppins", sans-serif;

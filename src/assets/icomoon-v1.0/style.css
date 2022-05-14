@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?itxnyb');
+  src:  url('fonts/icomoon.eot?itxnyb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?itxnyb') format('truetype'),
+    url('fonts/icomoon.woff?itxnyb') format('woff'),
+    url('fonts/icomoon.svg?itxnyb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ic-"], [class*=" ic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-add:before {
+  content: "\e900";
+}
+.ic-alert:before {
+  content: "\e901";
+}
+.ic-archive:before {
+  content: "\e902";
+}
+.ic-arrow-left:before {
+  content: "\e903";
+}
+.ic-arrow-right:before {
+  content: "\e904";
+}
+.ic-attach:before {
+  content: "\e905";
+}
+.ic-attachment:before {
+  content: "\e906";
+}
+.ic-building:before {
+  content: "\e907";
+}
+.ic-calendar:before {
+  content: "\e908";
+}
+.ic-check:before {
+  content: "\e909";
+}
+.ic-chevron-contract:before {
+  content: "\e90a";
+}
+.ic-chevron-down:before {
+  content: "\e90b";
+}
+.ic-chevron-expand:before {
+  content: "\e90c";
+}
+.ic-chevron-left:before {
+  content: "\e90d";
+}
+.ic-chevron-right:before {
+  content: "\e90e";
+}
+.ic-chevron-up:before {
+  content: "\e90f";
+}
+.ic-clarity_pop-out-line:before {
+  content: "\e910";
+}
+.ic-clock:before {
+  content: "\e911";
+}
+.ic-close:before {
+  content: "\e912";
+}
+.ic-code:before {
+  content: "\e913";
+}
+.ic-create-doc:before {
+  content: "\e914";
+}
+.ic-dashboard:before {
+  content: "\e915";
+}
+.ic-delete:before {
+  content: "\e916";
+}
+.ic-description:before {
+  content: "\e917";
+}
+.ic-download:before {
+  content: "\e918";
+}
+.ic-draft:before {
+  content: "\e919";
+}
+.ic-drop:before {
+  content: "\e91a";
+}
+.ic-edit:before {
+  content: "\e91b";
+}
+.ic-file:before {
+  content: "\e91c";
+}
+.ic-filter:before {
+  content: "\e91d";
+}
+.ic-grid:before {
+  content: "\e91e";
+}
+.ic-help:before {
+  content: "\e91f";
+}
+.ic-history:before {
+  content: "\e920";
+}
+.ic-holiday:before {
+  content: "\e921";
+}
+.ic-information-filled:before {
+  content: "\e922";
+}
+.ic-key:before {
+  content: "\e923";
+}
+.ic-list:before {
+  content: "\e924";
+}
+.ic-location:before {
+  content: "\e925";
+}
+.ic-logout:before {
+  content: "\e926";
+}
+.ic-log-out:before {
+  content: "\e927";
+}
+.ic-loop:before {
+  content: "\e928";
+}
+.ic-mail:before {
+  content: "\e929";
+}
+.ic-mail-read:before {
+  content: "\e92a";
+}
+.ic-meeting:before {
+  content: "\e92b";
+}
+.ic-menu:before {
+  content: "\e92c";
+}
+.ic-minutes:before {
+  content: "\e92d";
+}
+.ic-more-vert:before {
+  content: "\e92e";
+}
+.ic-notification:before {
+  content: "\e92f";
+}
+.ic-notification-1:before {
+  content: "\e930";
+}
+.ic-people:before {
+  content: "\e931";
+}
+.ic-person:before {
+  content: "\e932";
+}
+.ic-phone:before {
+  content: "\e933";
+}
+.ic-popup-detail:before {
+  content: "\e934";
+}
+.ic-print:before {
+  content: "\e935";
+}
+.ic-progress:before {
+  content: "\e936";
+}
+.ic-remove:before {
+  content: "\e937";
+}
+.ic-reply:before {
+  content: "\e938";
+}
+.ic-save:before {
+  content: "\e939";
+}
+.ic-scan:before {
+  content: "\e93a";
+}
+.ic-search:before {
+  content: "\e93b";
+}
+.ic-send:before {
+  content: "\e93c";
+}
+.ic-settings:before {
+  content: "\e93d";
+}
+.ic-share:before {
+  content: "\e93e";
+}
+.ic-sort:before {
+  content: "\e93f";
+}
+.ic-source-link:before {
+  content: "\e940";
+}
+.ic-star:before {
+  content: "\e941";
+}
+.ic-star-outlined:before {
+  content: "\e942";
+}
+.ic-subtract:before {
+  content: "\e943";
+}
+.ic-time:before {
+  content: "\e944";
+}
+.ic-transfer:before {
+  content: "\e945";
+}
+.ic-tree-view:before {
+  content: "\e946";
+}
+.ic-upload:before {
+  content: "\e947";
+}
+.ic-user:before {
+  content: "\e948";
+}
+.ic-view:before {
+  content: "\e949";
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// for local font import use @font-face method
+
+@import "./abstracts/variable";
+@import "./abstracts/mixins";
+
+// icon css imported
+@import "../icon.css";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+// bootstrap components
+@import "./components/buttons";
+@import "./components/list";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/sidebar";

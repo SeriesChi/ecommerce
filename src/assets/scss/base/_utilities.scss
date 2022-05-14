@@ -1,0 +1,109 @@
+// vertical line
+.vl {
+    display: inline-block;
+    border-left: 2px solid #6c757d;
+    margin: 0rem 0.59rem 0rem;
+    height: 0.9rem;
+}
+
+// Brand Logo
+.brand-logo {
+    color: $primary;
+    font-weight: 700;
+    padding: 0.5rem 1rem 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #EDF1FF;
+    border-color: #fff;
+}
+
+// Start of display flex
+
+.dp-flex {
+    display: flex;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-start {
+    align-items: flex-start;
+}
+
+.fx-column {
+    flex-direction: column;
+}
+
+.fx-row {
+    flex-direction: row;
+}
+
+.fx-grow {
+    flex-grow: 1;
+}
+
+// End of display flex
+
+// Start of Text Color
+
+.tc-white {
+    color: white;
+}
+
+.tc-black {
+    color: black;
+}
+
+.tc-primary {
+    color: $primary;
+}
+
+// End of Text color
+
+// Start of Background color
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+}
+
+.bg-danger {
+    background-color: red;
+}
+
+// End of Background color
+
+// Start of wrap
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+// End of wrap
+
+// Start of form
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 0;
+    // width: 100%;
+    line-height: 1.5;
+}
+
+// End of form
