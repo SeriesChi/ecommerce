@@ -2,7 +2,7 @@
 footer {
     color: $dark;
     background-color: $secondary;
-    padding: 3rem 4rem 0.5rem;
+    // padding: 3rem 4rem 0.5rem;
 
     section {
         display: flex;
@@ -22,12 +22,6 @@ footer {
 
     div:nth-child(4) {
         width: 300px;
-    }
-
-    .icon {
-        margin: 0.2rem 0.5rem 0rem 0.2rem;
-        color: $primary;
-        font-size: larger;
     }
 
     section > span{

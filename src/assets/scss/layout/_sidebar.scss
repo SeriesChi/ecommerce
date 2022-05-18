@@ -1,0 +1,21 @@
+.nav-header {
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+.nav-header > div:nth-child(2) {
+    display: flex;
+    flex: 1;
+    height: fit-content;
+}
+
+.search-group {
+    display: flex;
+    width: 80%;
+}
+
+.left-border {
+    border: 1px solid #EDF1FF;
+    border-left: 1px;
+}

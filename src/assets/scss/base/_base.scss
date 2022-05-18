@@ -2,18 +2,23 @@
 
 html, body {
     margin: 0;
-    background-color: $body-bg;
+    // background-color: $body-bg;
     height: 100vh;
     line-height: 1.5;
     font-family: $typeface1;
 }
 
 #root {
-    height: 100%;
+    // height: 100%;
+}
+
+section {
+    padding: 0.5rem 4rem 0.5rem;
 }
 
 main {
     height: calc(100% - var(--header-height));
+    // padding: 0.5rem 4rem 0.5rem;
 }
 
 h1 {

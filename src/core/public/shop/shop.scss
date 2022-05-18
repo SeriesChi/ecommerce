@@ -1,0 +1,26 @@
+.filter-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    // padding-bottom: 1rem;
+}
+
+.filter-value {
+    border: 1px solid #EDF1FF;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination-item {
+    border: 1px solid#EDF1FF;
+    padding: 8px 15px;
+    color: var(--primary);
+}
+
+.pagination-item:nth-child(2) {
+    background-color: var(--primary);
+    color: white;
+}

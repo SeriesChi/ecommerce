@@ -1,8 +1,17 @@
 // vertical line
 .vl {
-    display: inline-block;
+    // display: inline-block;
     border-left: 2px solid #6c757d;
     margin: 0rem 0.59rem 0rem;
+    height: 0.9rem;
+}
+
+// Horizontal line
+.hl {
+    // display: inline-block;
+    border-bottom: 1px solid #EDF1FF;
+    margin: 0px;
+    padding: 0px;
     height: 0.9rem;
 }
 
@@ -10,10 +19,10 @@
 .brand-logo {
     color: $primary;
     font-weight: 700;
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 0rem 1rem 0rem;
     margin-right: 1rem;
     border: 1px solid #EDF1FF;
-    border-color: #fff;
+    // border-color: #fff;
 }
 
 // Start of display flex
@@ -22,12 +31,24 @@
     display: flex;
 }
 
+.dp-inline {
+    display: inline;
+}
+
 .jc-between {
     justify-content: space-between;
 }
 
 .jc-center {
     justify-content: center;
+}
+
+.jc-evenly {
+    justify-content: space-evenly;
+}
+
+.jc-around {
+    justify-content: space-around;
 }
 
 .ai-center {
@@ -58,7 +79,7 @@
     color: white;
 }
 
-.tc-black {
+.tc-dark {
     color: black;
 }
 
@@ -67,6 +88,36 @@
 }
 
 // End of Text color
+
+// Start of Cursor
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// End of Cursor
+
+// Start of Text position
+
+.tc-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tc-start {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.tc-end {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+// End of Text Position
 
 // Start of Background color
 
@@ -96,6 +147,40 @@
 
 // End of wrap
 
+// Start of Width
+
+.pd-0 {
+    padding: 0px;
+}
+
+.pr-0 {
+    padding-right: 0px;
+}
+
+.wd-15 {
+    width: 15%;
+}
+.wd-20 {
+    width: 20%;
+}
+.wd-25 {
+    width: 25%;
+}
+.wd-35 {
+    width: 35%;
+}
+.wd-50 {
+    width: 50%;
+}
+.wd-75 {
+    width: 75%;
+}
+.wd-100 {
+    width: 100%;
+}
+
+// End of Width
+
 // Start of form
 
 .form-input {
@@ -104,6 +189,230 @@
     border: 0;
     // width: 100%;
     line-height: 1.5;
+    outline: none;
 }
 
 // End of form
+
+
+
+// Start of Navbar
+
+.box {
+    display: flex;
+    border: 1px solid #EDF1FF;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    padding: 0px 10px 0px;
+    min-width: 50px
+}
+
+// End of Navbar
+
+// Start of Other
+
+.icon {
+    margin: 0.2rem 0.5rem 0rem 0.2rem;
+    color: $primary;
+    font-size: larger;
+}
+
+.box-2 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+// End of Other
+
+
+// Start of Collapsible 
+
+.collapsible-btn {
+    display: flex;
+    background-color: $primary;
+    color: #6F6F6F;
+    height: 65px;
+    line-height: 1.5;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+
+    span {
+        padding-left: 30px;
+    }
+}
+
+// End of Collapsible
+
+
+//Start of Navbar
+
+.navbar{
+    display: flex;
+}
+
+.navbar.vertical-nav {
+    flex-direction: column;
+
+    a {
+        padding: 8px 30px;
+        border-bottom: 1px solid #EDF1FF;
+        border-right: 1px solid #EDF1FF;
+        border-left: 1px solid #EDF1FF;
+    }
+}
+
+.navbar.horizontal-nav {
+    justify-content: space-between;
+    width: 100%;
+
+    a {
+        padding: 8px 5px;
+        cursor: pointer;
+    }
+
+    div:first-child{
+        a:first-child{
+            color: $primary;
+        }
+    }
+}
+
+.navbar.vertical-nav-none {
+    display: none;
+}
+
+// End of Navbar
+
+.flex-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 0px 30px;
+}
+
+.flex-row-container>.flex-row-item {
+    flex: 0 0 30%; /*grow | shrink | basis */
+    margin-bottom: 30px;
+}
+
+.flex-row-container>.flex-nav-item {
+    flex: 0 0 23%;
+}
+
+.flex-row-item {
+    @extend .box;
+    padding: 15px;
+}
+
+.flex-nav-item {
+    @extend .flex-row-item;
+    border: 0px;
+}
+
+.flex-nav-item:first-child{
+    flex-direction: column;
+    padding: 0px;
+    // position: relative;
+
+    // nav {
+    //     position: absolute;
+    // }
+}
+.flex-nav-item:last-child{
+    flex: 1 0 50%;
+}
+
+.flex-row-item>a {
+    img:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+
+.flex-col-3 {
+    flex: 0 0 33%;    
+}
+
+.card-offer {
+    background-color: $secondary;
+}
+
+.offerList {
+    display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 42%;
+        padding-right: 3.5rem;
+    img {
+            margin-top: 20px;
+            height: 15rem;
+        }
+    
+        div {
+            padding-top: 1rem;
+            text-align: end;
+        }
+    
+        p:first-child {
+            color: $primary;
+            font-size: 1.3rem;
+        }
+    
+        .h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
+    
+        button {
+            background-color: transparent;
+            border: 1px solid $primary;
+                color: $primary;
+                width: fit-content;
+                font-size: 1rem;
+                padding: 1rem;
+        }
+}
+
+.offerList:nth-of-type(even){
+    padding-left: 3.5rem;
+    flex-direction: row-reverse;
+
+    div {
+        text-align: start;
+    }
+}
+
+.home-contact {
+    padding: 3rem 0rem 3rem;
+    text-align: center;
+    width: 50%;
+
+    h2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    input {
+        width: 75%;
+        line-height: 2rem;
+    }
+    
+    button {
+        width: fit-content;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+// Start of Container
+
+.container {
+    padding: 0.5rem 4rem 0.5rem;
+}
+
+// End of Container

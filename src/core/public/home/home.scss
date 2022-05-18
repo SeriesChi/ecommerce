@@ -1,0 +1,22 @@
+.card-box {
+    @extend .box !optional;
+    flex-direction: column;
+    p.text-light {
+        color: #6F6F6F;
+    }
+}
+
+.img-block {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.res-img {
+    object-fit: contain;
+    height: 19rem;
+
+}
+
+.text-actual {
+    text-decoration: line-through;
+}

@@ -8,6 +8,7 @@ interface IconProps {
 interface IconsProps {
 	icon: IconProps;
 	style?: Record<string, string>;
+	className?: string;
 }
 
 const defaultStyle = {
@@ -16,11 +17,12 @@ const defaultStyle = {
 };
 
 export const IconComponent = (props: IconsProps) => {
-	const { icon, style } = props;
+	const { icon, style, className } = props;
 	const { Component, color, size } = icon;
 	let customStyle = style || {};
 	return (
 		<Component
+			className={className || ""}
 			color={color || undefined}
 			size={size || undefined}
 			style={{ ...defaultStyle, ...customStyle } || style}
