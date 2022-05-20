@@ -1,0 +1,16 @@
+.heading{
+    &-01{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before, &:after{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: black;
+            margin: 0 0.5rem;
+            
+        }
+    }
+}

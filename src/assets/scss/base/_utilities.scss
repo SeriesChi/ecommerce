@@ -286,56 +286,59 @@
 }
 
 // End of Navbar
+.flex {
+    &-row{
+        &-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 30px 0px 30px;
 
-.flex-row-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 30px 0px 30px;
-}
+            >.flex-nav-item {
+                flex: 0 0 23%;
+            }
 
-.flex-row-container>.flex-row-item {
-    flex: 0 0 30%; /*grow | shrink | basis */
-    margin-bottom: 30px;
-}
-
-.flex-row-container>.flex-nav-item {
-    flex: 0 0 23%;
-}
-
-.flex-row-item {
-    @extend .box;
-    padding: 15px;
-}
-
-.flex-nav-item {
-    @extend .flex-row-item;
-    border: 0px;
-}
-
-.flex-nav-item:first-child{
-    flex-direction: column;
-    padding: 0px;
-    // position: relative;
-
-    // nav {
-    //     position: absolute;
-    // }
-}
-.flex-nav-item:last-child{
-    flex: 1 0 50%;
-}
-
-.flex-row-item>a {
-    img:hover {
-        transform: scale(1.2);
-        transition: 0.5s;
+        }
+        &-item{
+            flex: 0 0 30%; /*grow | shrink | basis */
+            margin-bottom: 30px;
+            @extend .box;
+            padding: 15px;
+            a{
+                img{
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
     }
-}
 
-.flex-col-3 {
-    flex: 0 0 33%;    
+    &-nav{
+        &-item{
+            @extend .flex-row-item;
+            border: 0px;
+            &:first-child{
+                flex-direction: column;
+                padding: 0px;
+                // position: relative;
+            
+                // nav {
+                //     position: absolute;
+                // }
+            }
+            &:last-child{
+                flex: 1 0 50%;
+            }
+        }
+    }
+    &-col{
+        &-3 {
+            flex: 0 0 33%;    
+        }
+    }
 }
 
 .card-offer {
@@ -376,16 +379,18 @@
                 font-size: 1rem;
                 padding: 1rem;
         }
+
+        &:nth-of-type(even){
+            padding-left: 3.5rem;
+            flex-direction: row-reverse;
+        
+            div {
+                text-align: start;
+            }
+        }
 }
 
-.offerList:nth-of-type(even){
-    padding-left: 3.5rem;
-    flex-direction: row-reverse;
 
-    div {
-        text-align: start;
-    }
-}
 
 .home-contact {
     padding: 3rem 0rem 3rem;
@@ -415,4 +420,3 @@
     padding: 0.5rem 4rem 0.5rem;
 }
 
-// End of Container
