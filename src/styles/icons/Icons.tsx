@@ -15,22 +15,24 @@ import { FaEye as eyeIcon } from "react-icons/fa";
 import { FaChevronDown as chevronDownIcon } from "react-icons/fa";
 import { CgChevronDoubleLeft as chevronDoubleLeftIcon } from "react-icons/cg";
 import { CgChevronDoubleRight as chevronDoubleRightIcon } from "react-icons/cg";
+import { AiOutlineMenu as menu } from "react-icons/ai";
 
 export {
-    facebookIcon,
-    twitterIcon,
-    linkedInIcon,
-    instagramIcon,
-    youtubeIcon,
-    chevronRightIcon,
-    chevronDownIcon,
-    heartIcon,
-    cartIcon,
-    checkIcon,
-    shippingIcon,
-    exchangeIcon,
-    phoneVolumeIcon,
-    eyeIcon,
-    chevronDoubleLeftIcon,
-    chevronDoubleRightIcon,
+	facebookIcon,
+	twitterIcon,
+	linkedInIcon,
+	instagramIcon,
+	youtubeIcon,
+	chevronRightIcon,
+	chevronDownIcon,
+	heartIcon,
+	cartIcon,
+	checkIcon,
+	shippingIcon,
+	exchangeIcon,
+	phoneVolumeIcon,
+	eyeIcon,
+	chevronDoubleLeftIcon,
+	chevronDoubleRightIcon,
+	menu,
 };

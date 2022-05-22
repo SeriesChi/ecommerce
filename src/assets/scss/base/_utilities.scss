@@ -1,6 +1,5 @@
 // vertical line
 .vl {
-    // display: inline-block;
     border-left: 2px solid #6c757d;
     margin: 0rem 0.59rem 0rem;
     height: 0.9rem;
@@ -8,21 +7,23 @@
 
 // Horizontal line
 .hl {
-    // display: inline-block;
     border-bottom: 1px solid #EDF1FF;
     margin: 0px;
     padding: 0px;
-    height: 0.9rem;
 }
 
 // Brand Logo
 .brand-logo {
     color: $primary;
     font-weight: 700;
-    padding: 0rem 1rem 0rem;
-    margin-right: 1rem;
+    font-size: 2.5rem;
+    padding: 0rem 1rem;
+    margin-right: 10px;
     border: 1px solid #EDF1FF;
-    // border-color: #fff;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 2rem;
+    }
 }
 
 // Start of display flex
@@ -33,6 +34,10 @@
 
 .dp-inline {
     display: inline;
+}
+
+.jc-start {
+    justify-content: flex-start;
 }
 
 .jc-between {
@@ -157,6 +162,10 @@
     padding-right: 0px;
 }
 
+.pt-0 {
+    padding-top: 0rem;
+}
+
 .wd-15 {
     width: 15%;
 }
@@ -268,16 +277,59 @@
 .navbar.horizontal-nav {
     justify-content: space-between;
     width: 100%;
+    height: 7rem;
+
+    .nav-item {
+        height: 100%;
+        display: flex;
+    }
 
     a {
-        padding: 8px 5px;
+        padding: 0px 5px;
+        height: 100%;
         cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0rem;
+        height: auto;
     }
 
     div:first-child{
         a:first-child{
             color: $primary;
         }
+    }
+
+    .menuIcon {
+        @extend .box;
+        display: none;
+        min-width: fit-content;
+        @media only screen and (max-width: 992px) {
+            display: flex;
+            width: min-content;
+            height: fit-content;
+            margin-left: 0px;
+            padding: 6px 12px;
+            font-size: 2rem;
+            color: #EDF1FF;
+        }
+    }
+
+    h1 {
+        margin: 0px;
+        padding: 0px;
+        width: min-content;
+        height: fit-content;
+        font-size: 2rem;
     }
 }
 
@@ -293,7 +345,7 @@
             flex-wrap: wrap;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 30px 0px 30px;
+            padding: 0px 0px;
 
             >.flex-nav-item {
                 flex: 0 0 23%;
@@ -320,14 +372,15 @@
         &-item{
             @extend .flex-row-item;
             border: 0px;
+            margin-left: 0px;
+            padding: 0px 15px;
+
             &:first-child{
                 flex-direction: column;
                 padding: 0px;
-                // position: relative;
-            
-                // nav {
-                //     position: absolute;
-                // }
+                @media only screen and (max-width: 992px) {
+                    display: none;
+                }
             }
             &:last-child{
                 flex: 1 0 50%;
@@ -347,47 +400,49 @@
 
 .offerList {
     display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 42%;
-        padding-right: 3.5rem;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 42%;
+    padding-right: 3.5rem;
+    
     img {
             margin-top: 20px;
             height: 15rem;
         }
     
-        div {
-            padding-top: 1rem;
-            text-align: end;
-        }
-    
-        p:first-child {
-            color: $primary;
-            font-size: 1.3rem;
-        }
-    
-        .h1 {
-            font-size: 2.3rem;
-            font-weight: 600;
-        }
-    
-        button {
-            background-color: transparent;
-            border: 1px solid $primary;
-                color: $primary;
-                width: fit-content;
-                font-size: 1rem;
-                padding: 1rem;
-        }
+    div {
+        padding-top: 1rem;
+        text-align: end;
+    }
 
-        &:nth-of-type(even){
-            padding-left: 3.5rem;
-            flex-direction: row-reverse;
-        
-            div {
-                text-align: start;
-            }
+    p:first-child {
+        color: $primary;
+        font-size: 1.3rem;
+    }
+
+    .h1 {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px solid $primary;
+            color: $primary;
+            width: fit-content;
+            font-size: 1rem;
+            padding: 1rem;
+    }
+
+    &:nth-of-type(even){
+        padding-left: 3.5rem;
+        padding-right: 0rem;
+        flex-direction: row-reverse;
+    
+        div {
+            text-align: start;
         }
+    }
 }
 
 

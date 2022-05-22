@@ -2,6 +2,24 @@
     &-header{
         display: flex;
         align-items: center;
+        height: 65px;
+
+        @media only screen and (max-width: 992px) {
+            >div:first-child {
+                display: none;
+            }
+            height: fit-content;
+        }
+
+        // > div:first-child {
+        //     @media only screen and (max-width: 992px) {
+        //         display: none;
+        //     }
+        // }
+
+        h1 {
+            margin: 0px;
+        }
     
         > div:nth-child(2){
             display: flex;
@@ -9,11 +27,14 @@
             height: fit-content;
         }
     }
-}
 
-.search-group {
-    display: flex;
-    width: 80%;
+    &-brand{
+        display: none;
+
+        @media only screen and (max-width: 992px) {
+            display: flex;
+        }
+    }
 }
 
 .left-border {

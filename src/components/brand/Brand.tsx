@@ -6,17 +6,15 @@ interface BrandProps {
 
 const Brand = ({ footer = false }: BrandProps) => {
 	return (
-		<>
-			<h1>
-				<span
-					className="brand-logo"
-					style={{ borderColor: footer ? "#fff" : "" }}
-				>
-					E
-				</span>
-				Shopper
-			</h1>
-		</>
+		<h1>
+			<span
+				className="brand-logo"
+				style={{ borderColor: footer ? "#fff" : "" }}
+			>
+				E
+			</span>
+			Shopper
+		</h1>
 	);
 };
 

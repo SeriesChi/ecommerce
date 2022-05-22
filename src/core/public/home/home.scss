@@ -1,8 +1,8 @@
 .card-box {
     @extend .box;
     flex-direction: column;
+    margin-left: 0px;
     p.text-light {
-        // color: #6F6F6F;
         color: $primary;
     }
 }
@@ -20,4 +20,10 @@
 
 .text-actual {
     text-decoration: line-through;
+}
+
+.vendor-block {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }

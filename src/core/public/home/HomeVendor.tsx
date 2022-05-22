@@ -3,10 +3,10 @@ import { vendors } from "./home-utils";
 const HomeVendor = () => {
 	return (
 		<section>
-			<div className="dp-flex jc-between">
+			<div className="vendor-block">
 				{vendors?.map((item, index) => (
 					<div className="box" key={index}>
-						<img src={item} />
+						<img style={{ objectFit: "cover" }} src={item} />
 					</div>
 				))}
 			</div>

@@ -33,6 +33,10 @@ import Vendor6Image from "../../assets/image/vendor/vendor-6.jpg";
 import Vendor7Image from "../../assets/image/vendor/vendor-7.jpg";
 import Vendor8Image from "../../assets/image/vendor/vendor-8.jpg";
 
+// Carousels
+import carousel1Image from "../../assets/image/carousel/carousel-1.jpg";
+import carousel2Image from "../../assets/image/carousel/carousel-2.jpg";
+
 export {
     PaymentImage,
     Cat1Image,
@@ -59,4 +63,6 @@ export {
     Vendor6Image,
     Vendor7Image,
     Vendor8Image,
+    carousel1Image,
+    carousel2Image
 };

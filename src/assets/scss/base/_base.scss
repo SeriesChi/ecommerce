@@ -10,12 +10,16 @@ html, body {
 
 }
 
-#root {
-    // height: 100%;
-}
+// #root {
+//     // height: 100%;
+// }
 
 section {
     padding: 0.5rem 4rem 0.5rem;
+
+    @media only screen and (max-width: 992px) {
+        padding: 1rem 0rem;
+    }
 }
 
 main {
