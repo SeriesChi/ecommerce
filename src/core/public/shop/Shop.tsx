@@ -8,7 +8,7 @@ import { IconComponent } from "../../../utils/icons/icon-utils";
 import HomeProduct from "../home/HomeProduct";
 import FilterComponent from "./FilterComponent";
 import { colorData, priceData, sizeData } from "./shop-utils";
-import "./shop.scss";
+// import "./shop.scss";
 
 const Shop = () => {
     return (
