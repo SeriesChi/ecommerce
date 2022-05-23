@@ -1,21 +1,22 @@
-.card-box {
-    @extend .box;
-    flex-direction: column;
-    margin-left: 0px;
-    p.text-light {
-        color: $primary;
+.card{
+    &-box {
+        @extend .box;
+        flex-direction: column;
+        margin-left: 0px;
+        p.text-light {
+            color: $primary;
+        }
     }
 }
-
-.img-block {
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.res-img {
-    object-fit: contain;
-    height: 19rem;
-
+.img{
+    &-block {
+        overflow: hidden;
+        max-width: 100%;
+    }
+    &-res {
+        object-fit: contain;
+        height: 19rem;
+    }
 }
 
 .text-actual {

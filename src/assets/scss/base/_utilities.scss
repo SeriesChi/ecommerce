@@ -28,68 +28,69 @@
 
 // Start of display flex
 
-.dp-flex {
-    display: flex;
+.dp {
+    &-flex{
+        display: flex;
+    }
+    
+    &-inline{
+        display: inline;
+    }
 }
 
-.dp-inline {
-    display: inline;
+.jc {
+    &-start {
+        justify-content: flex-start;
+    }
+    &-between {
+        justify-content: space-between;
+    }
+    &-center {
+        justify-content: center;
+    }
+    &-evenly {
+        justify-content: space-evenly;
+    }
+    &-around {
+        justify-content: space-around;
+    }
 }
 
-.jc-start {
-    justify-content: flex-start;
+.ai {
+    &-center {
+        align-items: center;
+    }
+    &-start {
+        align-items: flex-start;
+    }
 }
 
-.jc-between {
-    justify-content: space-between;
-}
-
-.jc-center {
-    justify-content: center;
-}
-
-.jc-evenly {
-    justify-content: space-evenly;
-}
-
-.jc-around {
-    justify-content: space-around;
-}
-
-.ai-center {
-    align-items: center;
-}
-
-.ai-start {
-    align-items: flex-start;
-}
-
-.fx-column {
-    flex-direction: column;
-}
-
-.fx-row {
-    flex-direction: row;
-}
-
-.fx-grow {
-    flex-grow: 1;
+.fx{
+    &-column {
+        flex-direction: column;
+    }
+    &-row {
+        flex-direction: row;
+    }
+    &-grow {
+        flex-grow: 1;
+    }
 }
 
 // End of display flex
 
 // Start of Text Color
 
-.tc-white {
-    color: white;
-}
-
-.tc-dark {
-    color: black;
-}
-
-.tc-primary {
-    color: $primary;
+.tc {
+    &-white {
+        color: white;
+    }
+    &-dark {
+        color: black;
+    }
+    &-primary {
+        color: $primary;
+    }
 }
 
 // End of Text color
@@ -104,38 +105,38 @@
 
 // Start of Text position
 
-.tc-center {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.tc-start {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.tc-end {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+.tc{
+    &-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &-start {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &-end {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
 }
 
 // End of Text Position
 
 // Start of Background color
 
-.bg-primary {
-    background-color: $primary;
-}
-
-.bg-secondary {
-    background-color: $secondary;
-}
-
-.bg-danger {
-    background-color: red;
+.bg{
+    &-primary {
+        background-color: $primary;
+    }
+    &-secondary {
+        background-color: $secondary;
+    }
+    &-danger {
+        background-color: red;
+    }
 }
 
 // End of Background color
@@ -166,39 +167,48 @@
     padding-top: 0rem;
 }
 
-.wd-15 {
-    width: 15%;
-}
-.wd-20 {
-    width: 20%;
-}
-.wd-25 {
-    width: 25%;
-}
-.wd-35 {
-    width: 35%;
-}
-.wd-50 {
-    width: 50%;
-}
-.wd-75 {
-    width: 75%;
-}
-.wd-100 {
-    width: 100%;
+.wd {
+    &-15{
+        width: 15%;
+    }
+    &-20 {
+        width: 20%;
+    }
+
+    &-25 {
+        width: 25%;
+    }
+
+    &-35 {
+        width: 35%;
+    }
+
+    &-50 {
+        width: 50%;
+    }
+
+    &-75 {
+        width: 75%;
+    }
+
+    &-100 {
+        width: 100%;
+    }
 }
 
 // End of Width
 
 // Start of form
 
-.form-input {
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 0;
-    // width: 100%;
-    line-height: 1.5;
-    outline: none;
+.form {
+    &-input {
+        padding: 10px;
+        margin-bottom: 1rem;
+        border: 0;
+        // width: 100%;
+        line-height: 1.5;
+        outline: none;
+    }
 }
 
 // End of form

@@ -99,7 +99,7 @@ const Navbar = () => {
 						</a>
 					</nav>
 					<div
-						className="bg-danger fx-grow"
+						className="fx-grow"
 						style={{
 							width: "100%",
 							overflow: "hidden",

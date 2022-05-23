@@ -11,7 +11,7 @@ const HomeCategory = () => {
 							{item.count} Products
 						</p>
 						<a href="" className="img-block">
-							<img src={item.image} className="res-img" />
+							<img src={item.image} className="img-res" />
 						</a>
 						<h3 className="tc-start">{item.title}</h3>
 					</div>
