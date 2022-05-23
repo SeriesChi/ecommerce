@@ -3,11 +3,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // background-color: red;
     color: $dark;
-    // height: var(--header-height);
     background-color: $secondary;
-    // font-weight: 400;
     padding: 0.5rem 4rem 0.5rem;
 
     a{

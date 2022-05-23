@@ -2,7 +2,6 @@
 footer {
     color: $dark;
     background-color: $secondary;
-    // padding: 3rem 4rem 0.5rem;
 
     section {
         display: flex;
@@ -22,7 +21,6 @@ footer {
     {
         &:not(:last-child) {
             max-width: 400px;
-            // min-width: 200px;
             padding-bottom: 1rem;
         }
 
@@ -33,7 +31,6 @@ footer {
 
     hr {
         margin: 0.5rem 0rem 1.5rem;
-        // color: #ffffff !important;
     }
 
     a {
